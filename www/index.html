@@ -35,9 +35,9 @@
             }
         </style>
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>DocMan</title>
+        <title>DocMan</title>-->
     </head>
     <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -52,7 +52,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Credits</a></li> 
+                        <li><a href="#" data-toggle="modal" data-target="#creditModal">About Us</a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -61,6 +61,24 @@
                 </div>
             </div>
         </nav>
+        <!-- Modal_credit **************************************************************************************-->
+        <div class="modal-fade" id="creditModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">About Us</h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-info">Version :- 1.0.0.0<p>
+                <p>Developed by Ankit Saha and Uddalak Das, DocMan is your personal Document Manager that would store your personal documents, bills, prescriptions and other documents in cloud and can be retrieved anytime on demand.<p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Carousel Start *************************************************************************************-->
         <div class="container">
             <br>
@@ -113,5 +131,9 @@
               </div>
         </div>
         <!-- Carousel End *************************************************************************************-->
+
+        
+
+
     </body>
 </html>
